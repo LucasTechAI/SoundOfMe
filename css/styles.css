@@ -4080,6 +4080,9 @@ img.u-pull-left {
     font-weight : 300;
     line-height : var(--vspace-1_25);
     color       : var(--color-text-light);
+    list-style  : none;
+    margin-left : 0;
+    padding     : 0;
 }
 
 .contact-links a,
@@ -4094,22 +4097,24 @@ img.u-pull-left {
     color : var(--color-1);
 }
 
-.contact-social {
-    list-style  : none;
-    margin-left : 0;
-}
-
 .contact-social li {
-    display      : inline-block;
+    display      : block;       /* Faz os itens ficarem um abaixo do outro */
     padding-left : 0;
+    margin-bottom: 8px;         /* Espaço entre os itens */
 }
 
+/* ❌ Remover vírgula automática */
 .contact-social li::after {
-    content : ",  ";
+    content: none;
 }
 
 .contact-social li:last-child::after {
-    display : none;
+    display: none;
+}
+
+.contact-btn {
+    margin-left  : auto;
+    margin-right : 5vw;
 }
 
 .contact-btn {
