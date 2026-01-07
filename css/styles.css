@@ -3779,6 +3779,20 @@ img.u-pull-left {
     transform : scale(1.2);
 }
 
+
+
+.company-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: bold;
+}
+.company-link:hover {
+    color: hsla(36, 72%, 60%, 1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* ------------------------------------------------------------------- 
  * ## modal popup
  * ------------------------------------------------------------------- */
